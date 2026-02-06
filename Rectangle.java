@@ -108,9 +108,11 @@ public class Rectangle {
     double eps = 0.001;
     double ratio = this.calcRatio();
     return 1 - eps < ratio && 1 + eps > ratio;
-
-
   }
-
+  // Return a description of a rectangle in the form of
+// Rectangle[x=*,y=*,w=*,h=*]
+  public String toString(){
+    return "Rectangle[x="+originX+",y="+originY+",w="+width+",h="+height+"]";
+  }
 }
 
