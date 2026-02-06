@@ -109,6 +109,7 @@ public class Rectangle {
     double ratio = this.calcRatio();
     return 1 - eps < ratio && 1 + eps > ratio;
 
+
   }
 
 }
